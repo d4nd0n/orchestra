@@ -1,0 +1,22 @@
+{
+  "name": "Video",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "concerto",
+      "otherEntityRelationshipName": "video",
+      "relationshipName": "concerto"
+    }
+  ],
+  "entityTableName": "video",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210324094727"
+}

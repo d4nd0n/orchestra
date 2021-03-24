@@ -1,0 +1,47 @@
+{
+  "name": "Concerto",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "hours",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "foto",
+      "otherEntityRelationshipName": "concerto",
+      "relationshipName": "foto"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "video",
+      "otherEntityRelationshipName": "concerto",
+      "relationshipName": "video"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "corso",
+      "otherEntityRelationshipName": "concerto",
+      "relationshipName": "corso"
+    }
+  ],
+  "entityTableName": "concerto",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210324094725"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Foto",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "concerto",
+      "otherEntityRelationshipName": "foto",
+      "relationshipName": "concerto"
+    }
+  ],
+  "entityTableName": "foto",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210324094726"
+}

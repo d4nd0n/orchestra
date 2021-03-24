@@ -1,0 +1,28 @@
+{
+  "name": "Cliente",
+  "fields": [
+    {
+      "fieldName": "nomeCliente",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "corso",
+      "otherEntityRelationshipName": "cliente",
+      "relationshipName": "corso",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "cliente",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210324094722"
+}

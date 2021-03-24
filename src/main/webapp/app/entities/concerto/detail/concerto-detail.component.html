@@ -1,0 +1,46 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <div *ngIf="concerto">
+      <h2 data-cy="concertoDetailsHeading"><span>Concerto</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span>ID</span></dt>
+        <dd>
+          <span>{{ concerto.id }}</span>
+        </dd>
+        <dt><span>Date</span></dt>
+        <dd>
+          <span>{{ concerto.date | formatMediumDate }}</span>
+        </dd>
+        <dt><span>Hours</span></dt>
+        <dd>
+          <span>{{ concerto.hours }}</span>
+        </dd>
+        <dt><span>Location</span></dt>
+        <dd>
+          <span>{{ concerto.location }}</span>
+        </dd>
+        <dt><span>Corso</span></dt>
+        <dd>
+          <div *ngIf="concerto.corso">
+            <a [routerLink]="['/corso', concerto.corso?.id, 'view']">{{ concerto.corso?.id }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/concerto', concerto.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

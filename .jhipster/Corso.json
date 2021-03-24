@@ -1,0 +1,41 @@
+{
+  "name": "Corso",
+  "fields": [
+    {
+      "fieldName": "anno",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "concerto",
+      "otherEntityRelationshipName": "corso",
+      "relationshipName": "concerto"
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "cliente",
+      "otherEntityRelationshipName": "corso",
+      "relationshipName": "cliente",
+      "ownerSide": false
+    },
+    {
+      "relationshipType": "many-to-many",
+      "otherEntityName": "insegnante",
+      "otherEntityRelationshipName": "corso",
+      "relationshipName": "insegnante",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "corso",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "changelogDate": "20210324094724"
+}

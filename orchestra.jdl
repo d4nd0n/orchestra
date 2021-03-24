@@ -1,0 +1,45 @@
+entity Cliente {
+	nomeCliente String
+}
+
+entity Insegnante {
+	nomeInsegnante String
+}
+
+entity Corso {
+	anno String
+}
+
+entity Concerto {
+	date LocalDate,
+    hours String,
+    location String	
+}
+
+entity Foto {
+	
+}
+
+entity Video {
+	
+}
+
+relationship ManyToMany {
+	Cliente{Corso} to Corso{Cliente}
+}
+
+relationship ManyToMany {
+	Insegnante{Corso} to Corso{Insegnante}
+}
+
+relationship OneToMany {
+	Corso{Concerto} to Concerto
+}
+
+relationship OneToMany {
+	Concerto{Foto} to Foto{Concerto}
+}
+
+relationship OneToMany {
+	Concerto{Video} to Video{Concerto}
+}

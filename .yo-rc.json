@@ -41,6 +41,8 @@
     "jwtSecretKey": "YjU2NmY3NzcyMzVmMzViOWE3NzA4Y2M4M2Y1ZjE3NmYwYzFmM2U1ZWNlMTE5MjFiNDdiZDhhMmI2NTg2YjljZGQ4OWQzYjM2ZDUxMzMyMDc4NDE2NWM5YjhhNDQxNGQ0NTYwYjA2OTY3ZjFhOGVjZDgyYzU5ODMxNWM5ZWEwMGY=",
     "clientPackageManager": "npm",
     "clientThemeVariant": "",
-    "languages": ["en", "fr"]
+    "languages": ["en", "fr"],
+    "entities": ["Cliente", "Insegnante", "Corso", "Concerto", "Foto", "Video"],
+    "lastLiquibaseTimestamp": 1616579247000
   }
 }
